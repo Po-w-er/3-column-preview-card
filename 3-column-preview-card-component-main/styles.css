@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+     min-height: 100vh;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.main-section{
+    display: grid;
+    padding: 50px 50px;
+    width: 900px;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.column-1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: hsl(31, 77%, 52%) ;
+}
+.column-2{
+    background:  hsl(184, 100%, 22%);
+}
+.column-3{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: hsl(179, 100%, 13%);
+}
+.column-1,.column-2,.column-3{
+    display: flex;
+    flex-direction: column;
+    row-gap:20px ;
+    padding:2rem;
+    height: 450px;
+}
+div p{
+    color:  hsla(0, 0%, 100%, 0.75) ;
+    overflow-y: hidden;
+}
+div h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.column-1-btn button,.column-2-btn button,.column-3-btn button{
+     
+     margin-top: 40%;
+     background: transparent;
+     border: none;
+     border-radius: 30px;
+     background: hsl(0, 0%, 95%)  ;
+     padding: .8rem 1.5rem;
+     font-size: 15px;
+     font-weight: 700;
+     cursor: pointer;
+     font-family: 'Lexend Deca', sans-serif;
+}
+.column-2-btn button{
+    margin-top: 50%;
+}
+.column-3-btn button{
+     margin-top: 50%;
+}
+.column-1-btn button{
+    color:  hsl(31, 77%, 52%);
+}
+
+.column-2-btn button{
+    color:   hsl(184, 100%, 22%);
+}
+
+.column-3-btn button{
+    color: hsl(179, 100%, 13%);
+}
+
+.column-1-btn button:active,.column-2-btn button:active,.column-3-btn button:active{
+    background: transparent;
+    border: 2px solid  hsl(0, 0%, 95%) ;
+    color: hsl(0, 0%, 95%) ;
+    
+}
+
+.column-1-btn button:hover,.column-2-btn button:hover,.column-3-btn button:hover{
+    background: transparent;
+    border: 2px solid  hsl(0, 0%, 95%) ;
+    color: hsl(0, 0%, 95%) ;
+    
+}
+
+@media (max-width: 823px) {
+    .main-section{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 50px auto;
+        padding: 40px 45px;
+    }
+
+    div p{
+        overflow-y: hidden;
+    }
+
+    .column-1,.column-2,.column-3{
+        border-radius: 0%;
+        height: 400px;
+        overflow-y: hidden;
+    }
+    
+    .column-1{
+        border-top-left-radius:10px;
+        border-top-right-radius: 10px;
+    }
+
+    .column-3{
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    
+.column-1-btn button,.column-2-btn button,.column-3-btn button{
+   margin-top: 1px;
+   padding: .6rem 1.6rem;
+   font-size: 15px;
+}
+}
+
+@media (max-width:312px){
+    .main-section{
+        padding: 20px 30px;
+    }
+    .column-1,.column-2,.column-3{
+        height: 560px;
+        overflow: hidden;
+    }
+   
+}
